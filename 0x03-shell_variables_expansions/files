@@ -1,0 +1,14 @@
+echo -e '#!bin/bash\n' > 0-alias
+echo -e '#!bin/bash\n' > 1-hello_you
+echo -e '#!bin/bash\n' > 2-path
+echo -e '#!bin/bash\n' > 3-paths
+echo -e '#!bin/bash\n' > 4-global_variables
+echo -e '#!bin/bash\n' > 5-local_variables
+echo -e '#!bin/bash\n' > 6-create_local_variable
+echo -e '#!bin/bash\n' > 7-create_global_variable
+echo -e '#!bin/bash\n' > 8-true_knowledge
+echo -e '#!bin/bash\n' > 9-divide_and_rule
+echo -e '#!bin/bash\n' > 10-love_exponent_breath
+echo -e '#!bin/bash\n' > 11-binary_to_decimal
+echo -e '#!bin/bash\n' > 12-combinations
+echo -e '#!bin/bash\n' > 13-print_float
