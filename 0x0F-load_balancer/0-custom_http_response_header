@@ -45,10 +45,10 @@ for dir in /var/www/{html,error}; do
 done
 
 # creating new index
-echo "Hello World!" >/var/www/html/index.html
+echo "Hello World!" | sudo tee >/var/www/html/index.html
 
 # create new error page
-echo "Ceci n'est pas une page" >/var/www/html/error_404.html
+echo "Ceci n'est pas une page" | sudo tee >/var/www/html/error_404.html
 
 # backup default server config file
 sudo cp /etc/nginx/sites-enabled/default nginx-sites-enabled_default.backup
@@ -64,7 +64,7 @@ server_config="server {
 			try_files \$uri \$uri/ =404;
 		}
 		if (\$request_filename ~ redirect_me){
-			rewrite ^ https://th3-gr00t.tk/ permanent;
+			rewrite ^ https://alxel.tech// permanent;
 		}
 		error_page 404 /error_404.html;
 		location = /error_404.html {
